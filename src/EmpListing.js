@@ -15,7 +15,7 @@ const EmpListing = () => {
 
   const RemoveFunction = (id) => {
     if (window.confirm("Do you want to remove?")) {
-      fetch("http://localhost:8000/employee/" + id, {
+      fetch("https://crud-operations-7sf7.onrender.com/employee/" + id, {
         method: "DELETE",
       })
         .then((res) => {
@@ -29,7 +29,7 @@ const EmpListing = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:8000/employee")
+    fetch("https://crud-operations-7sf7.onrender.com/employee")
       .then((res) => {
         return res.json();
       })

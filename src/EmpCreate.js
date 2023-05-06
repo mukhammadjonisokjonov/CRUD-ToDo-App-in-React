@@ -13,7 +13,7 @@ const EmpCreate = () => {
     e.preventDefault();
     const empdata = { id, name, email, phone, active };
 
-    fetch("http://localhost:8000/employee", {
+    fetch("https://crud-operations-7sf7.onrender.com/employee", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(empdata),

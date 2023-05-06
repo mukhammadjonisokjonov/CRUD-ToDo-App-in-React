@@ -7,7 +7,7 @@ const EmpDetails = () => {
   const [empdata, empdatachange] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:8000/employee/" + empid)
+    fetch("https://crud-operations-7sf7.onrender.com/employee/" + empid)
       .then((res) => {
         return res.json();
       })
